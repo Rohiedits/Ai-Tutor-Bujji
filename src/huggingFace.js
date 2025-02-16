@@ -5,7 +5,7 @@ export async function query() {
 		"https://api-inference.huggingface.co/models/ZB-Tech/Text-to-Image",
 		{
 			headers: {
-				Authorization: "Bearer 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",
+				 Authorization: "Bearer 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",
 				"Content-Type": "application/json",
 			},
 			method: "POST",

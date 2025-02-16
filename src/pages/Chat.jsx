@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import ReactMarkdown from "react-markdown";
 import { dataContext, prevUser } from '../context/UserContext'
 
 function Chat() {
@@ -21,9 +22,11 @@ function Chat() {
        :
        !showResult
        ?
-       <span>Loading...</span>
+       <span>Thinking...</span>
        :
-       <span>{showResult}</span>}
+       
+       <ReactMarkdown  >{showResult}</ReactMarkdown>}
+       {/* style={{overflow:"auto",whiteSpace:"pre-wrap",wordWrap:"break-word"}} */}
       </div>
     </div>
   )
